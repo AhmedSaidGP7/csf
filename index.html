@@ -41,12 +41,15 @@
         body,
         body * {
             font-family: 'csf-bold', sans-serif;
+            scroll-behavior: smooth;
+
 
         }
 
         html {
-            scroll-behavior: smooth;
-        }
+        scroll-behavior: smooth;
+    }
+
 
         /* body{
             background-color: #f3f4ff;
@@ -83,7 +86,10 @@
 <body style=" background-color: #f3f4ff;">
     <!-- Start: Navbar Centered Links -->
 
-    <div class="container mt-5 mb-3">
+    <div class="container mt-5 mb-3" style=" min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
         <div class="row mb-2">
             <div class="col-md-8 col-sm-12">
                 <!-- Left side with graphics -->
@@ -307,11 +313,32 @@
                         <div class="d-flex align-items-start">
                             <div class="flex-grow-1 ms-3" style="direction: rtl;">
                                 <h3 class="mb-2">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
-                                <p class="mb-0" style="font-size: larger;">
+                                <p class="mb-0" style="font-size: large; font-family: csf-normal;">
                                     بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai) </p>
-                                <h3 class="mb-2 mt-5" style="color: #fec442;"> events@csf.eg</h3>
-                                <div class="text-center mt-4  row">
-                                    <img src="assets/img/6.1.png" alt="Submit" width="100%">
+                                <div class="mt-4">
+                                </div>
+                                    <h3 class="mb-2 mt-5 mb-4" style="color: #fec442;"> events@csf.eg</h3>
+                                <div class="container rounded" style="background-color: #0f1a39">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-2 rounded me-3">
+                                            <img src="assets/img/id.png" alt="Submit" width="53" height="39">
+                                        </div>
+                                        <div class="flex-grow-1 mt-1">
+                                            <p class="mb-0" style="font-size: large; font-family: csf-normal;">
+                                                ضع عنوان البريد الإلكتروني  (سوشياثون +رقمك القومي/رقم جواز السفر/رقم وثيقة إقامة أو لجوء لغير المصريين).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" style="border-top: 3px solid #acb8e7; opacity: 0.5;">
+                                    <div class="d-flex align-items-start ">
+                                        <div class="p-2 rounded me-3">
+                                            <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
+                                        </div>
+                                        <div class="flex-grow-1 mt-1 mb-3">
+                                            <p class="mb-0" style="font-size: large; font-family: csf-normal;">
+                                                يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="p-2 rounded ms-3">
@@ -319,21 +346,39 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-6 order-md-1 mt-3">
-                        <div class="d-flex align-items-start">
+                        <div class="d-flex align-items-start mb-5">
                             <div class="p-2 rounded me-3">
                                 <img src="assets/img/email.png" alt="Submit" width="64" height="64">
                             </div>
                             <div class="flex-grow-1 mt-1">
                                 <h3 class="mb-2">Submit Your CSF Visual Identity Concept</h3>
-                                <p class="mb-0" style="font-size: large;">
+                                <p class="mb-0" style="font-size: large; font-family: csf-normal;">
                                     After finishing the form registration make sure to submit your version of CSF visual identity you have created in one of the vector extensions (ai, svg) on the following email:
 
                                 </p>
-                                <h3 class="mb-2 mt-5" style="color: #fec442;"> events@csf.eg</h3>
-                                <div class="text-center mt-4  row">
-                                    <img src="assets/img/6.png" alt="Submit" width="100%">
+                                <h3 class="mb-2 mt-5 mb-4" style="color: #fec442;"> events@csf.eg</h3>
+                                <div class="container rounded" style="background-color: #0f1a39">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-2 rounded me-3">
+                                            <img src="assets/img/id.png" alt="Submit" width="53" height="39">
+                                        </div>
+                                        <div class="flex-grow-1 mt-1">
+                                            <p class="mb-0" style="font-size: large; font-family: csf-normal;">
+                                                Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.            
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" style="border-top: 3px solid #acb8e7; opacity: 0.5;">
+                                    <div class="d-flex align-items-start ">
+                                        <div class="p-2 rounded me-3">
+                                            <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
+                                        </div>
+                                        <div class="flex-grow-1 mt-1 mb-3">
+                                            <p class="mb-0" style="font-size: large; font-family: csf-normal;">
+                                                You can attach an extra PDF file to visualize the identity you have worked on better.                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +386,7 @@
                 </div>
 
             </div>
-
+        
         </div>
     </section>
 
