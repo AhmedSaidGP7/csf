@@ -134,29 +134,27 @@
   }
 
 
-  @media (min-width: 768px) { /* md */
+  @media (min-width: 768px) {
     .custom-margin {
       margin: 2rem;
     }
   }
   .navbar-brand {
-    margin-left: auto; /* Push the logo to the right */
+    margin-left: auto;
 }
 
-/* Ensure language selector stays on the left */
+
 .navbar-nav {
-    margin-right: auto; /* Push the language selector to the left */
+    margin-right: auto;
 }
 
-/* Style for consistent alignment */
 .nav-link {
     display: flex;
     align-items: center;
 }
 
-/* Adjust the dropdown menu positioning if needed */
 .dropdown-menu {
-    left: 0; /* Ensure dropdown aligns with the button */
+    left: 0; 
 }
 .hidden {
     transform: translateY(-100%);
@@ -170,6 +168,14 @@
 /* Show the navbar */
 .visible {
     transform: translateY(0);
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .navbar {
+        /* Ensure mobile view is consistent */
+        transition: transform 0.3s ease-in-out;
+    }
 }
     </style>
     <link rel="icon" type="image/png" sizes="3569x3569"
