@@ -31,7 +31,9 @@ const translations = {
          extra_pdf: "You can attach an extra PDF file to visualize the identity you have worked on better.",
          identity_concept:"Submit Your CSF Visual Identity Concept",
          identity_desc:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
-         identity:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted."
+         identity:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
+         doc_title:"Competition For Designing the Visual Identity for the National Support Fund for Civil Work",
+
     },
     ar: {
         introduction: "مقدمـــــــــــــــة <br> عن سوشياثون" ,
@@ -65,28 +67,33 @@ const translations = {
         extra_pdf: "يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.",
         identity_concept:"ارسل مخطط تصميم الهوية البصرية للصندوق",
         identity_desc:"بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai)",
-        identity:"ضع عنوان البريد الإلكتروني  (سوشياثون +رقمك القومي/رقم جواز السفر/رقم وثيقة إقامة أو لجوء لغير المصريين)."
+        identity:"ضع عنوان البريد الإلكتروني  (سوشياثون +رقمك القومي/رقم جواز السفر/رقم وثيقة إقامة أو لجوء لغير المصريين).",
+        doc_title:" مســـــــــــــابقة <br> لتصميـــم الهويـــة البصريـــة لصندوق دعـم العـمـل الأهلي",
 
     }
+};
+
+const languageNames = {
+    en: 'English',
+    ar: 'العربية'
 };
 
 function changeLanguage(language) {
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         // Set innerHTML to preserve the structure of the HTML like <br> tags
-        element.innerHTML = translations[language][key];
+        element.innerHTML = translations[language][key] || '';
     });
 
-    // Set the language direction for Arabic
-   
+    // Update the language display in the navbar
+    document.getElementById('selectedLanguage').textContent = languageNames[language];
 
+    // Set the language direction
+    setDirection(language);
+
+    // Save the selected language to localStorage
     localStorage.setItem('selectedLanguage', language);
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'ar';
-    changeLanguage(savedLanguage);
-});
 
 function setDirection(language) {
     const rtlElements = document.querySelectorAll('.rtl');
@@ -95,11 +102,15 @@ function setDirection(language) {
     if (language === 'ar') {
         rtlElements.forEach(el => el.style.direction = 'rtl');
         ltrElements.forEach(el => el.style.direction = 'ltr');
-    } else if (language === 'en') {
+        document.documentElement.setAttribute('dir', 'rtl');
+    } else {
         rtlElements.forEach(el => el.style.direction = 'ltr');
         ltrElements.forEach(el => el.style.direction = 'ltr');
+        document.documentElement.setAttribute('dir', 'ltr');
     }
 }
 
-// Example usage:
-setDirection('ar'); 
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'ar';
+    changeLanguage(savedLanguage);
+});

@@ -63,6 +63,7 @@
         .timeline-item img {
             max-width: 100px;
             margin-left: 15px;
+            margin-right: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
         }
@@ -101,6 +102,21 @@
             align-items: flex-start;
             margin-bottom: 1rem;
         }
+        .text-content {
+    text-align: left;
+}
+
+.text-content .date {
+    text-align: right;
+}
+
+[dir="rtl"] .text-content {
+    text-align: left;
+}
+
+[dir="ltr"] .text-content .date {
+    text-align: left;
+}
     @media (max-width: 768px) { /* sm */
     .custom-margin-top {
       margin: 3rem !important;
@@ -173,7 +189,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language
+                            <span id="selectedLanguage">Language</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                             <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
@@ -187,7 +203,7 @@
     
     
     
-    <div class="container-fluid mt-5 mb-3" style=" min-height: 100vh;
+    <div class="container-fluid mt-5 mb-3" dir="ltr" style=" min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;">
@@ -205,7 +221,7 @@
                     <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid mt-sm-5 sociathon-logo"
                         style="max-width: 50%;color:#172753;margin-bottom: 5rem;top: -6rem;right: 1rem;">
                 </div>
-                <p class="text-end" style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 3rem ;">
+                <p class="text-end" style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 3rem ;" data-translate="doc_title">
                     مســـــــــــــابقة 
                     <br>
                     لتصميـــم الهويـــة البصريـــة لصندوق دعـم العـمـل الأهلي
@@ -224,7 +240,7 @@
     </div>
 
     <header class="bg-primary-gradient  mt-3 w-100">
-        <div class="container mt-5 paragraphs" style="direction: rtl;">
+        <div class="container mt-5 paragraphs">
                 <div class="row mt-3 rtl" style="margin-bottom: 5rem;" >
                     <div class="col-md-4 col-sm-3 mt-4"> <!-- Sidebar column -->
                         <div class="p-4 d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f4f4ff;" dir="rtl">
@@ -249,7 +265,7 @@
                   
                 </div>
            
-            <div class="row mb-3">
+            <div class="row mb-3 ">
                 <div class="col-md-12 text-end">
                     <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);"data-translate="int_5" >صندوق دعم العمل الأهلي</h3>
                 </div>
@@ -268,39 +284,39 @@
         </div>
     </header>
  
-    <section class="timeline-section mt-5" dir="rtl">
+    <section class="timeline-section mt-5" >
         <div class="container">
             <h2 class="text-center mb-5" style="color:#172753;" data-translate="timeline_title"></h2>
-            <div class="row g-4" style="width: 100rem;">
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Layer 1.png" alt="Icon 3">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_1"></h5>
-                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">14 SEP 2024</p>
+                            <p class="date" style="font-family: csf-bold;">14 SEP 2024</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Traning schedule.png" alt="Icon 2">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_2"></h5>
-                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">16 SEP 2024</p>
+                            <p class="date" style="font-family: csf-bold;">16 SEP 2024</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Forum.png" alt="Icon 1">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_3"></h5>
-                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">19-20-21 SEP 2024</p>
+                            <p class="date" style="font-family: csf-bold;">19-20-21 SEP 2024</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Customers reviews.png" alt="Icon 6">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_4"></h5>
@@ -308,24 +324,25 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Throphy.png" alt="Icon 5">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_5"></h5>
-                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">25 SEP 2024</p>
+                            <p class="date" style="font-family: csf-bold;">25 SEP 2024</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="timeline-item">
+                    <div class="timeline-item text-content">
                         <img src="assets/img/Vector.png" alt="Icon 4">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_6"></h5>
-                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">26 AUG 2024</p>
+                            <p class="date" style="font-family: csf-bold;">26 AUG 2024</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
     
@@ -367,9 +384,48 @@
             <div class="container rounded">
                 <div class="container">
                     <div class="row d-flex align-items-stretch">
+                        <div class="col-md-5 rounded  order-sm-1 order-md-1" >
+                            <div class="d-flex align-items-start mt-5 mb-5 rounded content" style="background-color: #15234b;padding: 2rem;">
+                              <div class="flex-grow-1 ms-3">
+                                <div class="d-flex gap-1">
+                                    <div class="p-2 rounded ms-3">
+                                        <img src="assets/img/downloads.png" alt="Submit" width="64" height="64">
+                                    </div>
+                                      <div>
+                                        <h3 class="mb-2" data-translate="visual_identity_title">قواعد وشروط المسابقة</h3>
+    
+                                        <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;" data-translate="visual_identity_body"> 
+                                            قم بتحميل المستند التالي للتعرف على تفاصيل مبادرة“سوشياثون”و قواعد وشروط المشاركة.
+                                          </p>
+                                      </div>
+                                </div>
+                                
+                                <div style="margin-top: 1.5rem;">
+                                  <a class="btn btn-warning px-5 rounded-pill  mb-4 mt-2" 
+                                     href="https://drive.google.com/file/d/12KOd1J-r_DgKGIajjmdesMgc9QXy1Ji0/view?usp=sharing"
+                                     target="_blank">تحميل - DOWNLOAD</a>
+                                </div>
+                                <div class="container rounded"  style="border: 2px solid #acb8e7; ">
+                                  <div class="d-flex align-items-start">
+                                    <div class="p-2 mt-2 rounded">
+                                      <img src="assets/img/id.png" alt="Submit" width="53" height="39">
+                                    </div>
+                                    <div class="flex-grow-1 mt-1 ">
+                                      <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="identity">
+                                        يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                            </div>
+                          </div>
+                      <div class="col-md-1"></div>
+                      
                       <div class="col-md-5 " >
                         <div class="d-flex align-items-start mt-5 mb-5 content rounded" style="background-color: #15234b;padding: 2rem;">
-                          <div class="flex-grow-1 ms-3" style="direction: rtl;">
+                          <div class="flex-grow-1 ms-3" >
                             <div class="d-flex gap-1">
                                 <div class="p-2 rounded ms-3">
                                     <img src="assets/img/email.png" alt="Submit" width="64" height="64">
@@ -397,44 +453,6 @@
                             </div>
                           </div>
                           
-                        </div>
-                      </div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-5 rounded" >
-                        <div class="d-flex align-items-start mt-5 mb-5 rounded content" style="background-color: #15234b;padding: 2rem;">
-                          <div class="flex-grow-1 ms-3" style="direction: rtl;">
-                            <div class="d-flex gap-1">
-                                <div class="p-2 rounded ms-3">
-                                    <img src="assets/img/downloads.png" alt="Submit" width="64" height="64">
-                                </div>
-                                  <div>
-                                    <h3 class="mb-2" data-translate="visual_identity_title">قواعد وشروط المسابقة</h3>
-
-                                    <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;" data-translate="visual_identity_body"> 
-                                        قم بتحميل المستند التالي للتعرف على تفاصيل مبادرة“سوشياثون”و قواعد وشروط المشاركة.
-                                      </p>
-                                  </div>
-                            </div>
-                            
-                            <div style="margin-top: 1.5rem;">
-                              <a class="btn btn-warning px-5 rounded-pill  mb-4 mt-2" 
-                                 href="https://drive.google.com/file/d/12KOd1J-r_DgKGIajjmdesMgc9QXy1Ji0/view?usp=sharing"
-                                 target="_blank">تحميل - DOWNLOAD</a>
-                            </div>
-                            <div class="container rounded"  style="border: 2px solid #acb8e7; ">
-                              <div class="d-flex align-items-start">
-                                <div class="p-2 mt-2 rounded">
-                                  <img src="assets/img/id.png" alt="Submit" width="53" height="39">
-                                </div>
-                                <div class="flex-grow-1 mt-1 ">
-                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="identity">
-                                    يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        
                         </div>
                       </div>
                     </div>
