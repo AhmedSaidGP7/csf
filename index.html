@@ -101,11 +101,22 @@
             align-items: flex-start;
             margin-bottom: 1rem;
         }
-        @media (min-width: 300px) { /* sm */
+    @media (max-width: 768px) { /* sm */
     .custom-margin-top {
       margin: 3rem !important;
     }
+    .sociathon-logo {
+        position: absolute;    
+    }
+    .m-top{
+        margin-top: 1rem;
+    }
+    .email_icon{
+        position: absolute;
+        right: 1rem;
+    }
   }
+
 
   @media (min-width: 768px) { /* md */
     .custom-margin {
@@ -148,7 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: center;">
-        <div class="row mb-2">
+        <div class="row mb-2 position-relative" >
             <div class="col-md-8 col-sm-12 text-start ">
                 <!-- Left side with graphics -->
                 <div class="position-relative ">
@@ -158,9 +169,9 @@
             </div>
             <div class="col-md-4">
                 <!-- Right side with text and button -->
-                <div class="text-end  position-relative" style="margin-right: 3rem;">
-                    <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid mt-sm-5"
-                        style="max-width: 50%; color:#172753; margin-bottom: 5rem;">
+                <div class="text-end" style="margin-right: 3rem;">
+                    <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid mt-sm-5 sociathon-logo"
+                        style="max-width: 50%;color:#172753;margin-bottom: 5rem;top: -6rem;right: 1rem;">
                 </div>
                 <p class="text-end" style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 3rem ;">
                     مســـــــــــــابقة 
@@ -336,8 +347,8 @@
             <div class="container rounded">
                 <div class="container">
                     <div class="row d-flex align-items-stretch">
-                      <div class="col-md-5 content rounded" style="background-color: #15234b;">
-                        <div class="d-flex align-items-start mt-5 mb-5">
+                      <div class="col-md-5 " >
+                        <div class="d-flex align-items-start mt-5 mb-5 content rounded" style="background-color: #15234b;padding: 2rem;">
                           <div class="flex-grow-1 ms-3" style="direction: rtl;">
                             <h3 class="mb-2">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
                             <p class="mb-5" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
@@ -363,8 +374,8 @@
                         </div>
                       </div>
                       <div class="col-md-1"></div>
-                      <div class="col-md-5 content rounded" style="background-color: #15234b;">
-                        <div class="d-flex align-items-start mt-5 mb-5">
+                      <div class="col-md-5 rounded" >
+                        <div class="d-flex align-items-start mt-5 mb-5 rounded content" style="background-color: #15234b;padding: 2rem;">
                           <div class="flex-grow-1 ms-3" style="direction: rtl;">
                             <h3 class="mb-2">قواعد وشروط المسابقة</h3>
                             <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;"> 
@@ -395,9 +406,7 @@
                       </div>
                     </div>
                   </div>
-
             </div>
-        
         </div>
     </section>
 
