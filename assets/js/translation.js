@@ -32,7 +32,7 @@ const translations = {
          identity_concept:"Submit Your CSF Visual Identity Concept",
          identity_desc:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
          identity:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
-         doc_title:" Visual Identity Competition for Civil Society Support Fund",
+         doc_title:" Visual Identity Competition for Civil Society Support Fund (CSF)",
          register:"Apply Now",
 
     },
