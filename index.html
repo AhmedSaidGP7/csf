@@ -51,8 +51,67 @@
         scroll-behavior: smooth;
     }
 
+    .timeline-section {
+            padding: 30px;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .timeline-item img {
+            max-width: 100px;
+            margin-left: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+        }
+        .timeline-item h5 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .gold-text {
+            color: #FFC107; /* Gold color */
+        }
+        .big-number {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .blue-text {
+            color: #0d6efd;
+        }
+        .number-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .custom-list {
+            list-style-type: none;
+            padding-right: 0;
+        }
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 300px) { /* sm */
+    .custom-margin-top {
+      margin: 3rem !important;
+    }
+  }
 
+  @media (min-width: 768px) { /* md */
+    .custom-margin {
+      margin: 2rem;
+    }
+  }
     </style>
     <link rel="icon" type="image/png" sizes="3569x3569"
         href="assets/img/Logo%20Sealed%20PNG.png?h=e945572cd7fc30bedd397e85d3e6a5f9">
@@ -85,301 +144,257 @@
 <body style=" background-color: #f3f4ff;">
     <!-- Start: Navbar Centered Links -->
 
-    <div class="container mt-5 mb-3" style=" min-height: 100vh;
+    <div class="container-fluid mt-5 mb-3" style=" min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;">
         <div class="row mb-2">
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-8 col-sm-12 text-start ">
                 <!-- Left side with graphics -->
-                <div class="position-relative">
+                <div class="position-relative ">
                     <img src="assets/img/1.png" alt="#1st Edition SOCIATHON" class="img-fluid w-100"
-                        style="max-width: 550px;">
+                        style="max-width: 75%;">
                 </div>
             </div>
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4">
                 <!-- Right side with text and button -->
-                <div class="text-end mb-4 position-relative">
-                    <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid"
-                        style="max-width: 100%; color:#172753;">
+                <div class="text-end  position-relative" style="margin-right: 3rem;">
+                    <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid mt-sm-5"
+                        style="max-width: 50%; color:#172753; margin-bottom: 5rem;">
                 </div>
-                <p class="text-end mb-4" style="font-size: 30px; font-weight: bold;">
-                    مسابقة لتصميم الهوية البصرية لصندوق دعم العمل الأهلي
+                <p class="text-end" style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 3rem ;">
+                    مســـــــــــــابقة 
+                    <br>
+                    لتصميـــم الهويـــة البصريـــة لصندوق دعـم العـمـل الأهلي
                 </p>
-                <p class="text-end mb-4" style="font-size: 30px; font-weight: bold;">
+                <p class="text-end mb-4" style="font-size: calc(1rem + 0.3vw); color:#172753;font-family: csf;margin-right: 3rem ;">
                     Visual Identity Competition for
                     Civil Society Support Fund
                 </p>
                 <div class="text-end">
-                    <a class="btn btn-warning" style="color:#172753;" role="button"
-                    href="#competition-rules" >APPLY NOW - سجل الآن</a>
+                    <a class="btn btn-warning btn-lg" style="color:#172753;margin-right: 3rem ; width: 15rem; margin-top: 5rem;" role="button"
+                    href="#competition-rules" >سجل الآن</a>
 
                 </div>
             </div>
         </div>
     </div>
-    <header class="bg-primary-gradient mt-3">
-        <div class="container mt-5 paragraphs">
-            <div class="row mb-4">
-                <div class="col-md-6 mt-3">
-                    <h2 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">INTRODUCING SOCIATHON:</h2>
-                    <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">COMPETE TO SHAPE THE FUTURE OF CIVIL SOCIETY.</h3>
-                </div>
-                <div class="col-md-6 text-end mt-3">
-                    <h2 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">:مقدمة عن سوشياثون</h2>
-                    <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">تنافس لتشكيل مستقبل المجتمع الأهلي</h3>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw);font-family: csf-normal;">"Sociathon" is the newest annual initiative from the "Civil Society Support Fund" under the portage of the Ministry of Social Solidarity. This year's inaugural event aims to inspire designers and creatives nationwide to participate in a competitive process to craft a visual identity for the CSF. This unique competition will produce a logo that will be widely recognized by Egyptians and remembered for years to come.</p>
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;">
+    <header class="bg-primary-gradient  mt-3 w-100">
+        <div class="container mt-5 paragraphs" style="direction: rtl;">
+                <div class="row mt-3" style="margin-bottom: 5rem;" >
+                    <div class="col-md-4 col-sm-3 mt-4"> <!-- Sidebar column -->
+                        <div class="p-4 d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f4f4ff;">
+                          <h2 class="fw-bold"  style="color: #1b1b4b;font-size: calc(2rem + 1vw); margin-bottom: 3rem;">مقدمـــــــــــــــة
+                            <br>
+                             عن سوشياثون</h2>
+                          <p style="color:#5993e3; direction: rtl; font-size: calc(1.5rem + 0.3vw);">نتنافس لتشكيل مستقبل
+                            <br> المجتمــــــــــــع الأهلــــــــي</p>
+                        </div>
+                      </div>
+                  <div class="col-md-8 text-end mt-4" > <!-- Main content column -->
                     <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">"سوشياثون" هي المبادرة السنوية الأحدث من "صندوق دعم المجتمع الأهلي،" تحت رعاية وزارة التضامن الاجتماعي! وتهدف في نسختها الأولى تشجيع المصممين والمبدعين من أنحاء الجمهورية للمنافسة  النزيهة حول تصميم هوية بصرية لهئية وطنية، وهي المسابقة الأولى من نوعها لتصميم شعار يراه كل مصري، و سيظل في الذاكرة زمناً طويلاً.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">Every year, this initiative focuses on engaging the community in addressing the various challenges faced by civil society organizations. For this year, the spotlight is on a brand identity design contest that will represent the Civil Society Support Fund, showcasing its vision and mission.</p>
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;">
                     <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">في كل عام، سوف تركز المبادرة على إشراك المجتمع في إيجاد الحلول للتحدياتٍ المختلفة التي تواجه منظمات المجتمع المدني. في نسخة هذا العام، تتمركز المبادرة حول مسابقة تصميم هوية بصرية (Brand Identity) تمثّل صندوق دعم المجتمع الاهليّ بما يعكس رؤية ورسالة صندوق دعم المجتمع الأهلي.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">We invite designers, creatives, and innovative thinkers to join the competition, offering more than just an artistic creation. Your participation will contribute significantly to advancing development efforts in Egypt.
-                        
-                        </p>
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;">
                     <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">ندعو المصممين، والمبدعين، وذوي الأفكار الخلاقة إلى المشاركة في المسابقة، والمساهمة - لا في تقديم منتج فني فحسب- بل في تطوير واقع العمل التنموي في مصر.</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;"> We eagerly await your designs and how they will demonstrate our commitment to empowering and strengthening civil society. Make an impact and showcase your creativity today!</p>
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;">
                     <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">نتطلع إلى رؤية إبداعاتكم وكيف ستعبر عن التزامنا العميق لتمكين وتقوية المجتمع المدني. اصنعوا فارقاً، واتركوا لمستكم الابداعية الآن!
                     </p>
+                    <!-- Add the rest of the text content here -->
+                  </div>
+                  
                 </div>
-            </div>
+           
             <div class="row mb-3">
-                <div class="col-md-6 mt-3">
-                    <h2 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">CIVIL SOCIETY SUPPORT FUND.</h2>
-                </div>
-                <div class="col-md-6 text-end mt-3">
+                <div class="col-md-12 text-end">
                     <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">صندوق دعم العمل الأهلي</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">Established under Law No. 149 of 2019, the Civil Society Support Fund is an independent entity under the Ministry of Social Solidarity. The fund is dedicated to promoting sustainable development, social and climate justice, and meeting humanitarian needs while fostering positive citizenship values and encouraging volunteerism. It supports civil society organizations through financial, technical, and administrative means, adhering to principles of accountability, transparency, and sustainability.</p>
-
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                <div class="col-md-12 text-end" style="direction: rtl;font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
                     صندوق دعم المجتمع الأهلي، الذي أنشأ بموجب القانون رقم 149 لسنة 2019، هي هيئة وطنية مستقلة. يهدف الصندوق إلى تعزيز التنمية المستدامة، والعدالة الاجتماعية والمناخية، وتلبية الاحتياجات الإنسانية، مع تعزيز قيم المواطنة الإيجابية وتشجيع العمل التطوعي. يقدم الصندوق دعمه لمنظمات المجتمع المدني من خلال وسائل مالية وفنية وإدارية، مع الالتزام بمبادئ المساءلة والشفافية والاستدامة.
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">The fund's mission is to create a supportive environment for civil society that is aligned with key national priorities through well-planned initiatives in social services and economic support. It focuses on addressing critical issues across all sectors, adopting a results-driven management approach, and diversifying funding sources to strengthen all areas of civil society.</p>
-                </div>
-                <div class="col-md-6 text-end" style="direction: rtl;">
+                <div class="col-md-12 text-end" style="direction: rtl;">
                     <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
                         تتمثل مهمة الصندوق في توفير بيئة داعمة للمجتمع المدني، تتوافق مع أبرز الأولويات الوطنية، من خلال عدة مبادرات مدروسة في مجالات الخدمة الاجتماعية والدعم الاقتصادي. يركز الصندوق على عدة قضايا ملحّة في كافة القطاعات. يتنبى صندوق دعم المجتمع الأهلي نهج إدارة قائم على النتائج الايجابية وتنويع مصادر التمويل لدعم كافة قطاعات المجتمع المدني.</p>
                 </div>
             </div>
         </div>
     </header>
-    <header class="bg-primary-gradient">
-        <!-- Start: Hero Clean Reverse -->
-        <div class="container pt-4 pt-xl-5">
-            <div class="col-12 ">
-                <!-- Start: Banner Clean -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="assets/img/3.1.png" alt="Competition Timeline" class="img-fluid w-100">
+ 
+
+    <section class="timeline-section mt-5" dir="rtl">
+        <div class="container">
+            <h2 class="text-center mb-5" style=" color:#172753;">المخطط الزمني للمسابقة</h2>
+            <div class="row g-4" style="width: 100rem;">
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Layer 1.png" alt="Icon 3">
+                        <div>
+                            <h5 style="font-family: csf-bold;">آخر موعد
+                                <br> للتسليــــم</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Traning schedule.png" alt="Icon 2">
+                        <div>
+                            <h5 style="font-family: csf-bold;">الإعـــلان عــــن
+                                <br> القائمة القصيرة</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Forum.png" alt="Icon 1">
+                        <div>
+                            <h5 style="font-family: csf-bold;">بدء ورشــــــة 
+                                <br>العمل المغلقة</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Customers reviews.png" alt="Icon 6">
+                        <div>
+                            <h5 style="font-family: csf-bold;">التصويت على
+                                <br> أفضل هــوية</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Throphy.png" alt="Icon 5">
+                        <div>
+                            <h5 style="font-family: csf-bold;">الإعـــلان عــــن
+                                <br> الفائز بالمسابقة</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="timeline-item">
+                        <img src="assets/img/Vector.png" alt="Icon 4">
+                        <div>
+                            <h5 style="font-family: csf-bold;">إنشـــاء عناصـــر 
+                                <br>الهوية البصرية</h5>
+                            <p style="font-family: csf-normal;">31 AUG 2024</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div><!-- End: Hero Clean Reverse -->
-    </header>
+    </section>
 
-    <header class="bg-primary-gradient">
-        <!-- Start: Hero Clean Reverse -->
-        <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5" style="padding-top: 41px;">
-                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
-                    <div class="text-center"></div>
-                </div>
-                <div class="col-12 col-lg-10 mx-auto" style="padding-right: 0px;padding-left: 0px;">
-                    <!-- Start: Banner Clean -->
-                    <section class="py-4 py-xl-5">
-                        <div class="container">
-                            <div style="direction: rtl;">
-                                <h1 class="timeline-heading-ar" style="color: #1b1b4b;">الجائزة المقدمة</h1>
-                                <h1 style="color: #1b1b4b;">PRIZE</h1>
-                                <img class="w-100 h-100 fit-cover" src="assets/img/5.png" width="680" height="334">
-                            </div>
-                        </div>
-                        <div class="container mt-5 paragraphs">
-                            <div class="row mb-4">
-                                <div class="col-md-6 mt-3">
-                                    <h2 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">WIN AND GIVE BACK: YOUR CHANCE TO SHINE
-                                        AND MAKE A DIFFERENCE!</h2>
-                                </div>
-                                <div class="col-md-6 text-end mt-3">
-                                    <h2 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">اكسب وشارك في الخير:
-                                        فرصتك للتألق وعمل تغيير</h2>
-                                </div>
-                            </div>
+    <div class="container" style="margin-top: 5rem; margin-bottom: 5rem;" >
+        <h2 class="text-center mb-5" style=" color:#172753;">الجائزة المقدمة</h2>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p style="font-size: large; font-family: csf-normal;font-size: calc(1rem + 0.3vw);">The SOCIATHON winner will receive a prize split equally between him\herself and a charitable project of their choice in Egypt. The charity work will be conducted in collaboration with a civil society organization selected by the winner. Additionally, three top designs will be showcased on social media for public voting to determine the final winner.</p>
-                                </div>
-                                <div class="col-md-6 text-end" style="direction: rtl;">
-                                    <p style="font-size: large; font-family: csf-normal;font-size: calc(1rem + 0.3vw);">جائزة تصميم الهوية البصرية لصندوق دعم المجتمع الأهلي ستٌوزع بالتساوي بين الفائز ومشروع تنموي من اختياره، تنفذه  إحدى منظمات المجتمع المدني  في مصر. وإيماناً من الصندوق بقيمة الشفافية ، ستطرح التصاميم الثلاثة النهائية للتصويت العلني على منصات التواصل الاجتماعي، ويختار الجمهور الفائز من بينهم.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section><!-- End: Banner Clean -->
-                </div>
+        <div class="row align-items-center">
+            <!-- Left side with image -->
+            <div class="col-md-8 col-sm-12 text-start text-center">
+                <img src="assets/img/5.png" alt="Prize Image" class="w-100 h-100 fit-cover big-image" >
             </div>
-        </div><!-- End: Hero Clean Reverse -->
-    </header>
 
-    <section id="competition-rules">
-        <div class="container-fluid text-light py-5" style="background-color: #172753;">
-            <div class="container rounded " style="background-color:#15234b">
-                <div class="row rounded ">
-                    <div class="col-md-6 order-md-2 text-end mb-3 mb-md-0 mt-3">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-grow-1 ms-3" style="direction: rtl;">
-                                <h3 class="mb-2">قواعد وشروط المسابقة
-                                </h3>
-                                <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                    قم بتحميل المستند التالي للتعرف على تفاصيل مبادرة“سوشياثون”و قواعد وشروط المشاركة.
-                                    
-                                </p>
-                            </div>
-                            <div class="p-2 rounded ms-3">
-                                <img src="assets/img/downloads.png" alt="Download" width="64" height="64">
-                            </div>
-                        </div>
-                    </div>
+            <!-- Right side with text -->
+            <div class="col-md-4" dir="rtl">
+                <h4 class="blue-text">اكسب وشارك في الخير: فرصتك للتألق وعمل تغيير</h4>
+                <p style="font-family: csf-normal;">سيتم تقسيم الجائزة بالتساوي بين الفائز ومشروع خيري يختاره في جمهورية مصر العربية.</p>
+                <p style="font-family: csf-normal;">يختارها الفائز شكل العمل الخيري بالتعاون مع منظمة مجتمع أهلي من اختياره.</p>
+                <h5 class="fw-bold">التصويت على الهويات البصرية النهائية للمتسابقين</h5>
+                <p>يتم على ثلاثة مراحل:</p>
+                        <div style="display: flex;
+                            align-items: flex-start;">
+                            <img  src="assets/img/n1.png" alt="Icon 3" width="30" height="30">
+                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
 
-                    <div class="col-md-6 order-md-1 mt-3">
-                        <div class="d-flex align-items-start">
-                            <div class="p-2 rounded me-3">
-                                <img src="assets/img/downloads.png" alt="Download" width="64" height="64">
-                            </div>
-                            <div class="flex-grow-1 mt-1">
-                                <h3 class="mb-2">Terms and Conditions
-                                </h3>
-                                <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                    Download this file to know morea bout Sociathon, and the competition terms and conditions. 
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4  ">
-                    <a class="btn btn-warning btn-lg px-5 rounded-pill  mb-5"
-                        href="https://drive.google.com/file/d/12KOd1J-r_DgKGIajjmdesMgc9QXy1Ji0/view?usp=sharing"
-                        target="_blank" style="color: #1b1b4b;">DOWNLOAD - تحميل</a>
-                </div>
+                        <div style="display: flex;
+                            align-items: flex-start;">
+                            <img  src="assets/img/n2.png" alt="Icon 3" width="30" height="30">
+                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
+                        </div>
+                        <div style="display: flex;
+                            align-items: flex-start;">
+                            <img  src="assets/img/n3.png" alt="Icon 3" width="30" height="30">
+                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
+
+                        </div>
             </div>
         </div>
-    </section><!-- Start: Footer Multi Column -->
+    </div>
+
     <section>
         <div class="container-fluid text-light py-5" style="background-color: #172753;">
-            <div class="container rounded" style="background-color: #15234b;">
-                <div class="row">
-                    <div class="col-md-6 order-md-2 text-end mb-3 mb-md-0 mt-3">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-grow-1 ms-3" style="direction: rtl;">
-                                <h3 class="mb-2">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
-                                <p class="mb-5" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                    بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai) </p>
-                                
-                                    <h3 class="mb-4" style="color: #fec442; margin-top: 5rem;"> events@csf.eg</h3>
-                                <div class="container rounded " style="background-color: #0f1a39">
-                                    <div class="d-flex align-items-start ">
-                                        <div class="p-2 rounded me-3 mt-2">
-                                            <img src="assets/img/id.png" alt="Submit" width="53" height="39">
-                                        </div>
-                                        <div class="flex-grow-1 mt-2">
-                                            <p class="mb-0" style="font-size: calc(1rem + 0.3vw);font-family: csf-normal;">
-                                                ضع عنوان البريد الإلكتروني  (سوشياثون +رقمك القومي/رقم جواز السفر/رقم وثيقة إقامة أو لجوء لغير المصريين).
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4 mt-5" style="border-top: 3px solid #acb8e7; opacity: 0.5;">
-                                    <div class="d-flex align-items-start ">
-                                        <div class="p-2 rounded me-3">
-                                            <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
-                                        </div>
-                                        <div class="flex-grow-1 mt-1 mb-3">
-                                            <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                                يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
-                                            </div>
-                                    </div>
+            <div class="container rounded">
+                <div class="container">
+                    <div class="row d-flex align-items-stretch">
+                      <div class="col-md-5 content rounded" style="background-color: #15234b;">
+                        <div class="d-flex align-items-start mt-5 mb-5">
+                          <div class="flex-grow-1 ms-3" style="direction: rtl;">
+                            <h3 class="mb-2">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
+                            <p class="mb-5" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                              بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai)
+                            </p>
+                            <h3 class="mb-4" style="color: #fec442; margin-top: 5rem;">events@csf.eg</h3>
+                            <div class="container rounded " style="border: 2px solid #acb8e7; ">
+                              <div class="d-flex align-items-start">
+                                <div class="p-2 rounded">
+                                  <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
                                 </div>
-                            </div>
-                            <div class="p-2 rounded ms-3">
-                                <img src="assets/img/email.png" alt="Submit" width="64" height="64">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-md-1 mt-3">
-                        <div class="d-flex align-items-start mb-5">
-                            <div class="p-2 rounded me-3">
-                                <img src="assets/img/email.png" alt="Submit" width="64" height="64">
-                            </div>
-                            <div class="flex-grow-1 mt-1">
-                                <h3 class="mb-2">Submit Your CSF Visual Identity Concept</h3>
-                                <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                    After finishing the form registration make sure to submit your version of CSF visual identity you have created in one of the vector extensions (ai, svg) on the following email:
-                                </p>
-                                <h3 class="mb-2 mt-5 mb-4" style="color: #fec442;"> events@csf.eg</h3>
-                                <div class="container rounded" style="background-color: #0f1a39">
-                                    <div class="d-flex align-items-start">
-                                        <div class="p-2 rounded me-3">
-                                            <img src="assets/img/id.png" alt="Submit" width="53" height="39">
-                                        </div>
-                                        <div class="flex-grow-1 mt-1">
-                                            <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                                Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.            
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4" style="border-top: 3px solid #acb8e7; opacity: 0.5;">
-                                    <div class="d-flex align-items-start ">
-                                        <div class="p-2 rounded me-3">
-                                            <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
-                                        </div>
-                                        <div class="flex-grow-1 mt-1 mb-3">
-                                            <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
-                                                You can attach an extra PDF file to visualize the identity you have worked on better.                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="flex-grow-1 mt-1 mb-3">
+                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                                    يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
+                                  </p>
                                 </div>
+                              </div>
                             </div>
+                          </div>
+                          <div class="p-2 rounded ms-3">
+                            <img src="assets/img/email.png" alt="Submit" width="64" height="64">
+                          </div>
                         </div>
+                      </div>
+                      <div class="col-md-1"></div>
+                      <div class="col-md-5 content rounded" style="background-color: #15234b;">
+                        <div class="d-flex align-items-start mt-5 mb-5">
+                          <div class="flex-grow-1 ms-3" style="direction: rtl;">
+                            <h3 class="mb-2">قواعد وشروط المسابقة</h3>
+                            <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;"> 
+                              قم بتحميل المستند التالي للتعرف على تفاصيل مبادرة“سوشياثون”و قواعد وشروط المشاركة.
+                            </p>
+                            <div class="mt-5" >
+                              <a class="btn btn-warning px-5 rounded-pill mt-5 mb-4" 
+                                 href="https://drive.google.com/file/d/12KOd1J-r_DgKGIajjmdesMgc9QXy1Ji0/view?usp=sharing"
+                                 target="_blank">تحميل - DOWNLOAD</a>
+                            </div>
+                            <div class="container rounded"  style="border: 2px solid #acb8e7; ">
+                              <div class="d-flex align-items-start">
+                                <div class="p-2 mt-2 rounded">
+                                  <img src="assets/img/id.png" alt="Submit" width="53" height="39">
+                                </div>
+                                <div class="flex-grow-1 mt-1 mb-3">
+                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                                    يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-2 rounded ms-3">
+                            <img src="assets/img/downloads.png" alt="Submit" width="64" height="64">
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
 
             </div>
         
