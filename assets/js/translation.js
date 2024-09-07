@@ -33,6 +33,7 @@ const translations = {
          identity_desc:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
          identity:"Make sure the email subject is your National ID or Passport number or other ID number for your submission to be accepted.",
          doc_title:"Competition For Designing the Visual Identity for the National Support Fund for Civil Work",
+         register:"Apply Now",
 
     },
     ar: {
@@ -69,7 +70,7 @@ const translations = {
         identity_desc:"بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai)",
         identity:"ضع عنوان البريد الإلكتروني  (سوشياثون +رقمك القومي/رقم جواز السفر/رقم وثيقة إقامة أو لجوء لغير المصريين).",
         doc_title:" مســـــــــــــابقة <br> لتصميـــم الهويـــة البصريـــة لصندوق دعـم العـمـل الأهلي",
-
+        register:"سجل الآن",
     }
 };
 
