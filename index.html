@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SOCIATHON'24: CSF Visual Identity Contest</title>
     <link rel="canonical" href="https://sociathon.csf.eg/">
     <meta property="og:url" content="https://sociathon.csf.eg/">
@@ -123,8 +122,7 @@
       margin: 3rem !important;
     }
     .sociathon-logo {
-        position: absolute;  
-        right: 2rem;  
+        position: absolute;    
     }
     .m-top{
         margin-top: 1rem;
@@ -136,27 +134,29 @@
   }
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) { /* md */
     .custom-margin {
       margin: 2rem;
     }
   }
   .navbar-brand {
-    margin-left: auto;
+    margin-left: auto; /* Push the logo to the right */
 }
 
-
+/* Ensure language selector stays on the left */
 .navbar-nav {
-    margin-right: auto;
+    margin-right: auto; /* Push the language selector to the left */
 }
 
+/* Style for consistent alignment */
 .nav-link {
     display: flex;
     align-items: center;
 }
 
+/* Adjust the dropdown menu positioning if needed */
 .dropdown-menu {
-    left: 0; 
+    left: 0; /* Ensure dropdown aligns with the button */
 }
 .hidden {
     transform: translateY(-100%);
@@ -170,14 +170,6 @@
 /* Show the navbar */
 .visible {
     transform: translateY(0);
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
-    .navbar {
-        /* Ensure mobile view is consistent */
-        transition: transform 0.3s ease-in-out;
-    }
 }
     </style>
     <link rel="icon" type="image/png" sizes="3569x3569"
@@ -250,19 +242,19 @@
                         style="max-width: 75%;">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 rtl">
                 <!-- Right side with text and button -->
-                <div class="text-end" style="margin-right: 3rem;">
+                <div  style="margin-right: 3rem;">
                     <img src="assets/img/2.png" alt="#1st Edition SOCIATHON" class="img-fluid mt-sm-5 sociathon-logo"
-                        style="max-width: 50%;color:#172753;margin-bottom: 5rem;top: -6rem;">
+                        style="max-width: 50%;color:#172753;margin-bottom: 5rem;top: -6rem;right: 1rem;">
                 </div>
-                <p class="rtl" style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 2rem ;" data-translate="doc_title">
-                    مســــــــــــابقة 
+                <p  style="font-size: calc(2rem + 0.3vw); font-weight: bold;color:#172753; margin-right: 3rem ;" data-translate="doc_title">
+                    مســـــــــــــابقة 
                     <br>
                     لتصميـــم الهويـــة البصريـــة لصندوق دعـم العـمـل الأهلي
                 </p>
                 
-                <div class="rtl">
+                <div>
                     <a class="btn btn-warning btn-lg" style="color:#172753;margin-right: 3rem ; width: 15rem; margin-top: 5rem;" role="button"
                     href="#competition-rules" data-translate="register"></a>
 
