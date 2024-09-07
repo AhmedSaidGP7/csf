@@ -123,6 +123,16 @@
       margin: 2rem;
     }
   }
+  .rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
     </style>
     <link rel="icon" type="image/png" sizes="3569x3569"
         href="assets/img/Logo%20Sealed%20PNG.png?h=e945572cd7fc30bedd397e85d3e6a5f9">
@@ -176,11 +186,12 @@
     </nav>
     
     
+    
     <div class="container-fluid mt-5 mb-3" style=" min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;">
-        <div class="row mb-2 position-relative" >
+        <div class="row mb-2 position-relative " >
             <div class="col-md-8 col-sm-12 text-start ">
                 <!-- Left side with graphics -->
                 <div class="position-relative ">
@@ -214,7 +225,7 @@
 
     <header class="bg-primary-gradient  mt-3 w-100">
         <div class="container mt-5 paragraphs" style="direction: rtl;">
-                <div class="row mt-3" style="margin-bottom: 5rem;" >
+                <div class="row mt-3 rtl" style="margin-bottom: 5rem;" >
                     <div class="col-md-4 col-sm-3 mt-4"> <!-- Sidebar column -->
                         <div class="p-4 d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f4f4ff;" dir="rtl">
                           <h2 class="fw-bold"  style="color: #1b1b4b;font-size: calc(2rem + 1vw); margin-bottom: 3rem;" data-translate="introduction"
@@ -266,7 +277,7 @@
                         <img src="assets/img/Layer 1.png" alt="Icon 3">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_1"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
+                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">14 SEP 2024</p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +286,7 @@
                         <img src="assets/img/Traning schedule.png" alt="Icon 2">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_2"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
+                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">16 SEP 2024</p>
                         </div>
                     </div>
                 </div>
@@ -284,7 +295,7 @@
                         <img src="assets/img/Forum.png" alt="Icon 1">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_3"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
+                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">19-20-21 SEP 2024</p>
                         </div>
                     </div>
                 </div>
@@ -293,7 +304,6 @@
                         <img src="assets/img/Customers reviews.png" alt="Icon 6">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_4"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
@@ -302,7 +312,7 @@
                         <img src="assets/img/Throphy.png" alt="Icon 5">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_5"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
+                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">25 SEP 2024</p>
                         </div>
                     </div>
                 </div>
@@ -311,7 +321,7 @@
                         <img src="assets/img/Vector.png" alt="Icon 4">
                         <div>
                             <h5 style="font-family: csf-bold;" data-translate="timeline_6"></h5>
-                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
+                            <p class="text-end" style="font-family: csf-bold;" dir="ltr">26 AUG 2024</p>
                         </div>
                     </div>
                 </div>
@@ -353,7 +363,7 @@
     </div>
 
     <section>
-        <div class="container-fluid text-light py-5" style="background-color: #172753;">
+        <div class="container-fluid text-light py-5 " style="background-color: #172753;" id="competition-rules">
             <div class="container rounded">
                 <div class="container">
                     <div class="row d-flex align-items-stretch">

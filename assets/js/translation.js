@@ -16,7 +16,6 @@ const translations = {
         timeline_4: 'Voting for Best Identity',
         timeline_5: 'Winner Announcement',
         timeline_6: 'Visual Identity Creation',
-        timeline_date: '31 AUG 2024',
         participate_title: "Win and Make a Difference: Your Chance to Shine and Create Change",
         participate_desc_1: "The prize will be equally divided between the winner and a charity project of their choice in Egypt.",
         participate_desc_2: "The winner will select the form of charity in cooperation with a civil society organization of their choice.",
@@ -51,7 +50,6 @@ const translations = {
         timeline_4: 'التصويت على أفضل هوية',
         timeline_5: 'الإعلان عن الفائز بالمسابقة',
         timeline_6: 'إنشاء عناصر الهوية البصرية',
-        timeline_date: '31 AUG 2024',
         participate_title: "اكسب وشارك في الخير: فرصتك للتألق وعمل تغيير",
         participate_desc_1: "سيتم تقسيم الجائزة بالتساوي بين الفائز ومشروع خيري يختاره في جمهورية مصر العربية.",
         participate_desc_2: "يختارها الفائز شكل العمل الخيري بالتعاون مع منظمة مجتمع أهلي من اختياره.",
@@ -89,3 +87,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'ar';
     changeLanguage(savedLanguage);
 });
+
+function setDirection(language) {
+    const rtlElements = document.querySelectorAll('.rtl');
+    const ltrElements = document.querySelectorAll('.ltr');
+
+    if (language === 'ar') {
+        rtlElements.forEach(el => el.style.direction = 'rtl');
+        ltrElements.forEach(el => el.style.direction = 'ltr');
+    } else if (language === 'en') {
+        rtlElements.forEach(el => el.style.direction = 'ltr');
+        ltrElements.forEach(el => el.style.direction = 'ltr');
+    }
+}
+
+// Example usage:
+setDirection('ar'); 
