@@ -115,3 +115,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'ar';
     changeLanguage(savedLanguage);
 });
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('mainNav');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            if (currentScroll > 50) {
+                navbar.classList.remove('hidden');
+                navbar.classList.add('visible');
+            }
+        } else {
+            navbar.classList.add('hidden');
+            navbar.classList.remove('visible');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    if (window.pageYOffset === 0) {
+        navbar.classList.add('hidden');
+        navbar.classList.remove('visible');
+    }
+});
