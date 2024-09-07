@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" >
 
 <head>
     <meta charset="utf-8">
@@ -142,7 +142,6 @@
         href="assets/img/Logo%20Sealed%20PNG.png?h=e945572cd7fc30bedd397e85d3e6a5f9">
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=2ef8dee5f11530c7b88bfc37301e4638">
-
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css?h=ef71a55f2ffde56c4064c8e5f44817ca">
     <link rel="stylesheet" href="assets/css/accordion-faq-list.css?h=f47106324583193c7d3c36c0bd40c232">
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
@@ -150,11 +149,33 @@
     <link rel="stylesheet" href="assets/css/Countdown.css?h=cc2890393e54669d57d10b751daec953">
     <link rel="stylesheet" href="assets/css/Features-Small-Icons-Color-icons.css?h=befd8a398792e305b7ffd4a176b5b585">
     <link rel="stylesheet" href="assets/css/MAV_LanguageSelectButton.css?h=0e23dcf5981b91bed5191842686ccd9c">
+    <link rel="stylesheet" href="">
 </head>
 
 <body style=" background-color: #f3f4ff;">
     <!-- Start: Navbar Centered Links -->
-
+    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
     <div class="container-fluid mt-5 mb-3" style=" min-height: 100vh;
     display: flex;
     align-items: center;
@@ -195,20 +216,22 @@
         <div class="container mt-5 paragraphs" style="direction: rtl;">
                 <div class="row mt-3" style="margin-bottom: 5rem;" >
                     <div class="col-md-4 col-sm-3 mt-4"> <!-- Sidebar column -->
-                        <div class="p-4 d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f4f4ff;">
-                          <h2 class="fw-bold"  style="color: #1b1b4b;font-size: calc(2rem + 1vw); margin-bottom: 3rem;">مقدمـــــــــــــــة
+                        <div class="p-4 d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f4f4ff;" dir="rtl">
+                          <h2 class="fw-bold"  style="color: #1b1b4b;font-size: calc(2rem + 1vw); margin-bottom: 3rem;" data-translate="introduction"
+                          >مقدمـــــــــــــــة
                             <br>
                              عن سوشياثون</h2>
-                          <p style="color:#5993e3; direction: rtl; font-size: calc(1.5rem + 0.3vw);">نتنافس لتشكيل مستقبل
+                          <p style="color:#5993e3; direction: rtl; font-size: calc(1.5rem + 0.3vw);" data-translate="compare"
+                          >نتنافس لتشكيل مستقبل
                             <br> المجتمــــــــــــع الأهلــــــــي</p>
                         </div>
                       </div>
                   <div class="col-md-8 text-end mt-4" > <!-- Main content column -->
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">"سوشياثون" هي المبادرة السنوية الأحدث من "صندوق دعم المجتمع الأهلي،" تحت رعاية وزارة التضامن الاجتماعي! وتهدف في نسختها الأولى تشجيع المصممين والمبدعين من أنحاء الجمهورية للمنافسة  النزيهة حول تصميم هوية بصرية لهئية وطنية، وهي المسابقة الأولى من نوعها لتصميم شعار يراه كل مصري، و سيظل في الذاكرة زمناً طويلاً.</p>
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">في كل عام، سوف تركز المبادرة على إشراك المجتمع في إيجاد الحلول للتحدياتٍ المختلفة التي تواجه منظمات المجتمع المدني. في نسخة هذا العام، تتمركز المبادرة حول مسابقة تصميم هوية بصرية (Brand Identity) تمثّل صندوق دعم المجتمع الاهليّ بما يعكس رؤية ورسالة صندوق دعم المجتمع الأهلي.</p>
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">ندعو المصممين، والمبدعين، وذوي الأفكار الخلاقة إلى المشاركة في المسابقة، والمساهمة - لا في تقديم منتج فني فحسب- بل في تطوير واقع العمل التنموي في مصر.</p>
+                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="int_1">"سوشياثون" هي المبادرة السنوية الأحدث من "صندوق دعم المجتمع الأهلي،" تحت رعاية وزارة التضامن الاجتماعي! وتهدف في نسختها الأولى تشجيع المصممين والمبدعين من أنحاء الجمهورية للمنافسة  النزيهة حول تصميم هوية بصرية لهئية وطنية، وهي المسابقة الأولى من نوعها لتصميم شعار يراه كل مصري، و سيظل في الذاكرة زمناً طويلاً.</p>
+                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="int_2">في كل عام، سوف تركز المبادرة على إشراك المجتمع في إيجاد الحلول للتحدياتٍ المختلفة التي تواجه منظمات المجتمع المدني. في نسخة هذا العام، تتمركز المبادرة حول مسابقة تصميم هوية بصرية (Brand Identity) تمثّل صندوق دعم المجتمع الاهليّ بما يعكس رؤية ورسالة صندوق دعم المجتمع الأهلي.</p>
+                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;"data-translate="int_3">ندعو المصممين، والمبدعين، وذوي الأفكار الخلاقة إلى المشاركة في المسابقة، والمساهمة - لا في تقديم منتج فني فحسب- بل في تطوير واقع العمل التنموي في مصر.</p>
 
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">نتطلع إلى رؤية إبداعاتكم وكيف ستعبر عن التزامنا العميق لتمكين وتقوية المجتمع المدني. اصنعوا فارقاً، واتركوا لمستكم الابداعية الآن!
+                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="int_4">نتطلع إلى رؤية إبداعاتكم وكيف ستعبر عن التزامنا العميق لتمكين وتقوية المجتمع المدني. اصنعوا فارقاً، واتركوا لمستكم الابداعية الآن!
                     </p>
                     <!-- Add the rest of the text content here -->
                   </div>
@@ -217,46 +240,42 @@
            
             <div class="row mb-3">
                 <div class="col-md-12 text-end">
-                    <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);">صندوق دعم العمل الأهلي</h3>
+                    <h3 class="fw-bold" style="color: #1b1b4b;font-size: calc(1.5rem + 1vw);"data-translate="int_5" >صندوق دعم العمل الأهلي</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-end" style="direction: rtl;font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                <div class="col-md-12 text-end" style="direction: rtl;font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="int_6">
                     صندوق دعم المجتمع الأهلي، الذي أنشأ بموجب القانون رقم 149 لسنة 2019، هي هيئة وطنية مستقلة. يهدف الصندوق إلى تعزيز التنمية المستدامة، والعدالة الاجتماعية والمناخية، وتلبية الاحتياجات الإنسانية، مع تعزيز قيم المواطنة الإيجابية وتشجيع العمل التطوعي. يقدم الصندوق دعمه لمنظمات المجتمع المدني من خلال وسائل مالية وفنية وإدارية، مع الالتزام بمبادئ المساءلة والشفافية والاستدامة.
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-end" style="direction: rtl;">
-                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                    <p style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;"data-translate="int_7">
                         تتمثل مهمة الصندوق في توفير بيئة داعمة للمجتمع المدني، تتوافق مع أبرز الأولويات الوطنية، من خلال عدة مبادرات مدروسة في مجالات الخدمة الاجتماعية والدعم الاقتصادي. يركز الصندوق على عدة قضايا ملحّة في كافة القطاعات. يتنبى صندوق دعم المجتمع الأهلي نهج إدارة قائم على النتائج الايجابية وتنويع مصادر التمويل لدعم كافة قطاعات المجتمع المدني.</p>
                 </div>
             </div>
         </div>
     </header>
  
-
     <section class="timeline-section mt-5" dir="rtl">
         <div class="container">
-            <h2 class="text-center mb-5" style=" color:#172753;">المخطط الزمني للمسابقة</h2>
+            <h2 class="text-center mb-5" style="color:#172753;" data-translate="timeline_title"></h2>
             <div class="row g-4" style="width: 100rem;">
                 <div class="col-md-4">
                     <div class="timeline-item">
                         <img src="assets/img/Layer 1.png" alt="Icon 3">
                         <div>
-                            <h5 style="font-family: csf-bold;">آخر موعد
-                                <br> للتسليــــم</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_1"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-md-4">
                     <div class="timeline-item">
                         <img src="assets/img/Traning schedule.png" alt="Icon 2">
                         <div>
-                            <h5 style="font-family: csf-bold;">الإعـــلان عــــن
-                                <br> القائمة القصيرة</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_2"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
@@ -264,9 +283,8 @@
                     <div class="timeline-item">
                         <img src="assets/img/Forum.png" alt="Icon 1">
                         <div>
-                            <h5 style="font-family: csf-bold;">بدء ورشــــــة 
-                                <br>العمل المغلقة</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_3"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
@@ -274,9 +292,8 @@
                     <div class="timeline-item">
                         <img src="assets/img/Customers reviews.png" alt="Icon 6">
                         <div>
-                            <h5 style="font-family: csf-bold;">التصويت على
-                                <br> أفضل هــوية</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_4"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
@@ -284,29 +301,27 @@
                     <div class="timeline-item">
                         <img src="assets/img/Throphy.png" alt="Icon 5">
                         <div>
-                            <h5 style="font-family: csf-bold;">الإعـــلان عــــن
-                                <br> الفائز بالمسابقة</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_5"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <div class="timeline-item">
                         <img src="assets/img/Vector.png" alt="Icon 4">
                         <div>
-                            <h5 style="font-family: csf-bold;">إنشـــاء عناصـــر 
-                                <br>الهوية البصرية</h5>
-                            <p style="font-family: csf-normal;">31 AUG 2024</p>
+                            <h5 style="font-family: csf-bold;" data-translate="timeline_6"></h5>
+                            <p style="font-family: csf-normal;" data-translate="timeline_date"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <div class="container" style="margin-top: 5rem; margin-bottom: 5rem;" >
-        <h2 class="text-center mb-5" style=" color:#172753;">الجائزة المقدمة</h2>
+        <h2 class="text-center mb-5" style="color:#172753;" data-translate="prize_title"></h2>
 
         <div class="row align-items-center">
             <!-- Left side with image -->
@@ -316,28 +331,23 @@
 
             <!-- Right side with text -->
             <div class="col-md-4" dir="rtl">
-                <h4 class="blue-text">اكسب وشارك في الخير: فرصتك للتألق وعمل تغيير</h4>
-                <p style="font-family: csf-normal;">سيتم تقسيم الجائزة بالتساوي بين الفائز ومشروع خيري يختاره في جمهورية مصر العربية.</p>
-                <p style="font-family: csf-normal;">يختارها الفائز شكل العمل الخيري بالتعاون مع منظمة مجتمع أهلي من اختياره.</p>
-                <h5 class="fw-bold">التصويت على الهويات البصرية النهائية للمتسابقين</h5>
-                <p>يتم على ثلاثة مراحل:</p>
-                        <div style="display: flex;
-                            align-items: flex-start;">
-                            <img  src="assets/img/n1.png" alt="Icon 3" width="30" height="30">
-                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
-
-                        </div>
-                        <div style="display: flex;
-                            align-items: flex-start;">
-                            <img  src="assets/img/n2.png" alt="Icon 3" width="30" height="30">
-                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
-                        </div>
-                        <div style="display: flex;
-                            align-items: flex-start;">
-                            <img  src="assets/img/n3.png" alt="Icon 3" width="30" height="30">
-                            <p style="font-family: csf-normal;  margin-right: 10px;">يتم التصويت علي أفضل 10 هويات عن طريق التصويت العلني على منصتنا على السوشيال ميديا.</p>
-
-                        </div>
+                <h4 class="blue-text" data-translate="participate_title"></h4>
+                <p style="font-family: csf-normal;" data-translate="participate_desc_1"></p>
+                <p style="font-family: csf-normal;" data-translate="participate_desc_2"></p>
+                <h5 class="fw-bold" data-translate="voting_title"></h5>
+                <p data-translate="voting_process"></p>
+                <div style="display: flex; align-items: flex-start;">
+                    <img src="assets/img/n1.png" alt="Icon 3" width="30" height="30">
+                    <p style="font-family: csf-normal; margin-right: 10px;" data-translate="voting_step_1"></p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <img src="assets/img/n2.png" alt="Icon 3" width="30" height="30">
+                    <p style="font-family: csf-normal; margin-right: 10px;" data-translate="voting_step_2"></p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <img src="assets/img/n3.png" alt="Icon 3" width="30" height="30">
+                    <p style="font-family: csf-normal; margin-right: 10px;" data-translate="voting_step_3"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -355,9 +365,9 @@
                                     <img src="assets/img/email.png" alt="Submit" width="64" height="64">
                                   </div>
                                   <div>
-                                    <h3 class="mb-2">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
+                                    <h3 class="mb-2" data-translate="identity_concept">ارسل مخطط تصميم الهوية البصرية للصندوق</h3>
 
-                                    <p class="mb-5" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                                    <p class="mb-5" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="identity_desc">
                                         بعد التسجيل، لا تنس أن ترسل التصور المبدأي للهوية البصرية على البريد الإلكتروني التالي. (يجب أن تكون صيغة الملف .svg أو .ai)
                                       </p>
                                   </div>
@@ -369,7 +379,7 @@
                                   <img src="assets/img/pdf.png" alt="Submit" width="48" height="50">
                                 </div>
                                 <div class="flex-grow-1 mt-1 mb-3">
-                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="extra_pdf">
                                     يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
                                   </p>
                                 </div>
@@ -388,16 +398,16 @@
                                     <img src="assets/img/downloads.png" alt="Submit" width="64" height="64">
                                 </div>
                                   <div>
-                                    <h3 class="mb-2">قواعد وشروط المسابقة</h3>
+                                    <h3 class="mb-2" data-translate="visual_identity_title">قواعد وشروط المسابقة</h3>
 
-                                    <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;"> 
+                                    <p  style="font-size: calc(1rem + 0.3vw); font-family: csf-normal; margin-bottom: 5rem;" data-translate="visual_identity_body"> 
                                         قم بتحميل المستند التالي للتعرف على تفاصيل مبادرة“سوشياثون”و قواعد وشروط المشاركة.
                                       </p>
                                   </div>
                             </div>
                             
                             <div style="margin-top: 1.5rem;">
-                              <a class="btn btn-warning px-5 rounded-pill  mb-4 mt-3" 
+                              <a class="btn btn-warning px-5 rounded-pill  mb-4 mt-2" 
                                  href="https://drive.google.com/file/d/12KOd1J-r_DgKGIajjmdesMgc9QXy1Ji0/view?usp=sharing"
                                  target="_blank">تحميل - DOWNLOAD</a>
                             </div>
@@ -407,7 +417,7 @@
                                   <img src="assets/img/id.png" alt="Submit" width="53" height="39">
                                 </div>
                                 <div class="flex-grow-1 mt-1 ">
-                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;">
+                                  <p class="mb-0" style="font-size: calc(1rem + 0.3vw); font-family: csf-normal;" data-translate="identity">
                                     يمكنك إرفاق ملف إضافي بصيغة .pdf لإيضاح الهوية البصرية بشكل أفضل.
                                   </p>
                                 </div>
@@ -428,6 +438,7 @@
     <script src="assets/js/Countdown-countdown.js?h=aef5ea6eb3ccc059f3a0168c7bd4f581"></script>
     <script src="assets/js/Countdown.js?h=43ce6b367d177becbdb41d47c6a138b6"></script>
     <script async data-id="101460384" src="//static.getclicky.com/js"></script>
+    <script src="assets/js/translation.js"></script>
 </body>
 
 </html>
