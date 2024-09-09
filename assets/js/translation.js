@@ -18,7 +18,7 @@ const translations = {
         timeline_6: 'Visual Identity Creation',
         participate_title: "More than a prize: Unleash your creativity close and bring a closer step to Change!",
         participate_desc_1: "The winner of Sociathon will not only receive a prize, but will also have the opportunity to contribute to a meaningful cause. The prize will be shared equally between the winner and a charitable project of their choice in Egypt. The charitable initiative will be carried out in collaboration with a civil society organization selected by the winner. Furthermore, the top three designs will be featured on social media, where the public can vote to determine the ultimate winner.",
-        voting_title: "Voting for the Final Visual Identities of the Contestants",
+        voting_title: "The winning prize: 100,000 EGP",
         voting_process: "The voting will take place in three stages:",
         voting_step_1: "All final identities will be voted on by a selected group of creatives and specialists in graphic design.",
         voting_step_2: "The top 10 identities will be chosen by public voting on our social media platform.",
